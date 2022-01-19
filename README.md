@@ -9,8 +9,7 @@ g++ main.o tile.o level.o -o platformer -lsfml-window -pthread -lX11
 ```
 
 # cmd optimalization
-To play this game, I recommend to set screen buffer height to 30. Otherwise, game will run painfully slow.
-You can also run this game in Powershell or Terminal to get even higher performance, but of course, you will need to change screen buffer size too.
+I reccomend using gnome terminal, xfce terminal or similar to those.
 
 # creating levels
 + and - on numpad changes tile.
