@@ -5,7 +5,7 @@ C++ platformer game running entirely in cmd
 This is version only for linux. You need SFML library to compile it.
 ```
 g++ -c main.cpp tile.cpp level.cpp
-g++ main.o tile.o level.o -o sfml-app -lsfml-window -pthread -lX11
+g++ main.o tile.o level.o -o platformer -lsfml-window -pthread -lX11
 ```
 
 # cmd optimalization
