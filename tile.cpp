@@ -1,15 +1,18 @@
-#include <iostream>
 #include "tile.h"
 
 using namespace std;
 
-Tile::Tile(char displayCharacter, int blockHardness, bool isDangerous, bool isStart, bool isFinish, bool isPlayer) {
+Tile::Tile(string tileId, char displayCharacter, int blockHardness, bool isDangerous, bool isStart, bool isFinish) {
+    id=tileId;
     character=displayCharacter;
     hardness=blockHardness;
     damage=isDangerous;
     start=isStart;
     finish=isFinish;
-    player=isPlayer;
+}
+
+string Tile::getId() {
+  return id;
 }
 
 char Tile::getCharacter() {
@@ -32,11 +35,11 @@ bool Tile::getFinish() {
     return finish;
 }
 
-bool Tile::getPlayer() {
-    return player;
-}
-
 //#############################
+
+void Tile::setId(string tileId) {
+  id = tileId;
+}
 
 void Tile::setCharacter(char displayCharacter) {
     character=displayCharacter;
@@ -58,15 +61,11 @@ void Tile::setFinish(bool isFinish) {
     finish=isFinish;
 }
 
-void Tile::setPlayer(bool isPlayer) {
-    player=isPlayer;
-}
-
-void Tile::setTile(char displayCharacter, int blockHardness, bool isDangerous, bool isStart, bool isFinish, bool isPlayer) {
+void Tile::setTile(string tileId, char displayCharacter, int blockHardness, bool isDangerous, bool isStart, bool isFinish) {
+    id=tileId;
     character=displayCharacter;
     hardness=blockHardness;
     damage=isDangerous;
     start=isStart;
     finish=isFinish;
-    player=isPlayer;
 }
