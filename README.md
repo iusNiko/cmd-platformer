@@ -12,6 +12,6 @@ g++ main.o tile.o level.o -o platformer -lsfml-window -pthread -lX11
 I reccomend using gnome terminal, xfce terminal or similar to those.
 
 # creating levels
-+ and - on numpad changes tile.
+- and + on numpad changes tile.
 M key saves file.
 
