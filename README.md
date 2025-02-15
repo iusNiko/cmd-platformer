@@ -9,7 +9,7 @@ g++ main.o tile.o level.o -o platformer -lsfml-window -pthread -lX11
 ```
 
 # cmd optimalization
-I reccomend using gnome terminal, xfce terminal or similar to those.
+I suggest using terminal app with GPU acceleration for the best effect.
 
 # creating levels
 To change tiles, use + and - on numpad.
